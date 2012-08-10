@@ -8,27 +8,28 @@
 
 #import "EzSampleViewController.h"
 
-@interface EzSampleViewController ()
-
-@end
-
 @implementation EzSampleViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+	self.statusLabel.text = @"";
 }
 
-- (void)viewDidUnload
+- (void)label:(EzSampleLabel *)label touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
+	self.statusLabel.text = @"ラベルをタッチしています。";
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+- (void)label:(EzSampleLabel *)label touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+	self.statusLabel.text = @"";
+}
+
+- (void)label:(EzSampleLabel *)label touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	self.statusLabel.text = @"";
 }
 
 @end

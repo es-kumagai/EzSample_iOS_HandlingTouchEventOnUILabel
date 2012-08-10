@@ -15,6 +15,8 @@
 		B19D910415D4A528008369CF /* EzSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B19D910315D4A528008369CF /* EzSampleAppDelegate.m */; };
 		B19D910715D4A528008369CF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B19D910515D4A528008369CF /* MainStoryboard.storyboard */; };
 		B19D910A15D4A528008369CF /* EzSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B19D910915D4A528008369CF /* EzSampleViewController.m */; };
+		B19D911515D4AB89008369CF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B19D911415D4AB89008369CF /* README.md */; };
+		B19D911915D4B083008369CF /* EzSampleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B19D911815D4B083008369CF /* EzSampleLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,10 @@
 		B19D910615D4A528008369CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		B19D910815D4A528008369CF /* EzSampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EzSampleViewController.h; sourceTree = "<group>"; };
 		B19D910915D4A528008369CF /* EzSampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EzSampleViewController.m; sourceTree = "<group>"; };
+		B19D911415D4AB89008369CF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
+		B19D911715D4B083008369CF /* EzSampleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EzSampleLabel.h; sourceTree = "<group>"; };
+		B19D911815D4B083008369CF /* EzSampleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EzSampleLabel.m; sourceTree = "<group>"; };
+		B19D911A15D4B0AD008369CF /* EzSampleLabelDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EzSampleLabelDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,9 @@
 				B19D910515D4A528008369CF /* MainStoryboard.storyboard */,
 				B19D910815D4A528008369CF /* EzSampleViewController.h */,
 				B19D910915D4A528008369CF /* EzSampleViewController.m */,
+				B19D911715D4B083008369CF /* EzSampleLabel.h */,
+				B19D911815D4B083008369CF /* EzSampleLabel.m */,
+				B19D911A15D4B0AD008369CF /* EzSampleLabelDelegate.h */,
 				B19D90FA15D4A528008369CF /* Supporting Files */,
 			);
 			path = EzSample_iOS_HandlingTouchEventOnUILabel;
@@ -90,6 +99,7 @@
 		B19D90FA15D4A528008369CF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B19D911415D4AB89008369CF /* README.md */,
 				B19D90FB15D4A528008369CF /* EzSample_iOS_HandlingTouchEventOnUILabel-Info.plist */,
 				B19D90FC15D4A528008369CF /* InfoPlist.strings */,
 				B19D90FF15D4A528008369CF /* main.m */,
@@ -152,6 +162,7 @@
 			files = (
 				B19D90FE15D4A528008369CF /* InfoPlist.strings in Resources */,
 				B19D910715D4A528008369CF /* MainStoryboard.storyboard in Resources */,
+				B19D911515D4AB89008369CF /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +176,7 @@
 				B19D910015D4A528008369CF /* main.m in Sources */,
 				B19D910415D4A528008369CF /* EzSampleAppDelegate.m in Sources */,
 				B19D910A15D4A528008369CF /* EzSampleViewController.m in Sources */,
+				B19D911915D4B083008369CF /* EzSampleLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +292,7 @@
 				B19D910F15D4A528008369CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

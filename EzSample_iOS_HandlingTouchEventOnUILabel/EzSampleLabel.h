@@ -1,5 +1,5 @@
 //
-//  EzSampleViewController.h
+//  EzSampleLabel.h
 //  EzSample_iOS_HandlingTouchEventOnUILabel
 //
 //  Created by 熊谷 友宏 on H.24/08/10.
@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "EzSampleLabel.h"
+#import "EzSampleLabelDelegate.h"
 
-@interface EzSampleViewController : UIViewController <EzSampleLabelDelegate>
+@interface EzSampleLabel : UILabel
 
-@property (nonatomic,readwrite,weak) IBOutlet UILabel* statusLabel;
+@property (nonatomic,readwrite,weak) IBOutlet id<EzSampleLabelDelegate> delegate;
 
 @end
